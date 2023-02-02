@@ -3,16 +3,20 @@ lockfileVersion: 5.4
 specifiers:
   '@heroicons/vue': v1
   '@nuxtjs/tailwindcss': ^6.3.1
+  '@prisma/client': ^4.9.0
   '@types/node': ^18.11.18
   nuxt: ^3.1.1
+  prisma: ^4.9.0
 
 dependencies:
   '@heroicons/vue': 1.0.6
+  '@prisma/client': 4.9.0_prisma@4.9.0
   '@types/node': 18.11.18
 
 devDependencies:
   '@nuxtjs/tailwindcss': 6.3.1
   nuxt: 3.1.1_@types+node@18.11.18
+  prisma: 4.9.0
 
 packages:
 
@@ -1107,6 +1111,28 @@ packages:
       - ts-node
       - webpack
     dev: true
+
+  /@prisma/client/4.9.0_prisma@4.9.0:
+    resolution: {integrity: sha512-bz6QARw54sWcbyR1lLnF2QHvRW5R/Jxnbbmwh3u+969vUKXtBkXgSgjDA85nji31ZBlf7+FrHDy5x+5ydGyQDg==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.9.0-42.ceb5c99003b99c9ee2c1d2e618e359c14aef2ea5
+      prisma: 4.9.0
+    dev: false
+
+  /@prisma/engines-version/4.9.0-42.ceb5c99003b99c9ee2c1d2e618e359c14aef2ea5:
+    resolution: {integrity: sha512-M16aibbxi/FhW7z1sJCX8u+0DriyQYY5AyeTH7plQm9MLnURoiyn3CZBqAyIoQ+Z1pS77usCIibYJWSgleBMBA==}
+    dev: false
+
+  /@prisma/engines/4.9.0:
+    resolution: {integrity: sha512-t1pt0Gsp+HcgPJrHFc+d/ZSAaKKWar2G/iakrE07yeKPNavDP3iVKPpfXP22OTCHZUWf7OelwKJxQgKAm5hkgw==}
+    requiresBuild: true
 
   /@rollup/plugin-alias/4.0.3_rollup@3.12.1:
     resolution: {integrity: sha512-ZuDWE1q4PQDhvm/zc5Prun8sBpLJy41DMptYrS6MhAy9s9kL/doN1613BWfEchGVfKxzliJ3BjbOPizXX38DbQ==}
@@ -4584,6 +4610,14 @@ packages:
     resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     dev: true
+
+  /prisma/4.9.0:
+    resolution: {integrity: sha512-bS96oZ5oDFXYgoF2l7PJ3Mp1wWWfLOo8B/jAfbA2Pn0Wm5Z/owBHzaMQKS3i1CzVBDWWPVnOohmbJmjvkcHS5w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.9.0
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
