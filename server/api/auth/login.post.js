@@ -1,5 +1,5 @@
 import { getUserByUsername } from "~~/server/db/users"
-import { generateToken } from "~~/server/utils/jwt"
+import { generateTokens } from "~~/server/utils/jwt"
 import bcrypt from "bcrypt"
 
 export default defineEventHandler(async (event) => {
@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
   // Generate Tokens
   // Access token
   // Refresh token
-  const { accessToken, refreshToken } = generateToken(user)
+  const { accessToken, refreshToken } = generateTokens(user)
 
   return {
     accessToken,

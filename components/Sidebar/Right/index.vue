@@ -68,6 +68,11 @@ const whoToFollowItems = ref([
     name: 'Zizou ☃️',
     handle: '@zizoublc_',
     image: 'https://pbs.twimg.com/profile_images/1551535209002274817/3j4wr1D5_400x400.jpg'
+  },
+  {
+    name: 'Florent • Volax',
+    handle: '@VolaxOff',
+    image: 'https://pbs.twimg.com/profile_images/1207059578015428613/S3JWtk57_400x400.jpg'
   }
 ])
 </script>
